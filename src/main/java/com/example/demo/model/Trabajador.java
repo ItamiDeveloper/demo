@@ -1,11 +1,21 @@
 package com.example.demo.model;
 
 public class Trabajador {
+    private String name;
     private double sueldoBase;
     private int horasExtra;
     private double sueldoTotal;
+    
+    
 
     // Getters y Setters
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {    
+        this.name = name;
+    }
+
     public double getSueldoBase() {
         return sueldoBase;
     }

@@ -11,6 +11,9 @@
         <h1 class="text-center">Registrar Trabajador</h1>
         <form action="/successTrabajador" method="post" th:object="${trabajador}">
             <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" id="name" name="name" th:field="*{name}" class="form-control" required>
+            <div class="mb-3">
                 <label for="sueldoBase" class="form-label">Sueldo Base</label>
                 <input type="number" id="sueldoBase" name="sueldoBase" th:field="*{sueldoBase}" class="form-control" required>
             </div>
